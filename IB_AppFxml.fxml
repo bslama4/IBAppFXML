@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Tab?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="653.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ib_app.IB_AppFxmlController">
+    <children>
+      <Label fx:id="lblInstr" layoutX="126.0" layoutY="90.0" minHeight="16" minWidth="69" text="Instrument" />
+      <TextField fx:id="instr" layoutX="250.0" layoutY="86.0" prefHeight="10.0" prefWidth="77.0" text="EURGBP" />
+      <Label fx:id="lbltimeint" layoutX="126.0" layoutY="120.0" minHeight="16" minWidth="69" text="Time Int" />
+      <ComboBox fx:id="timeIntCbx" layoutX="250.0" layoutY="116.0" prefHeight="25.0" prefWidth="77.0" />
+      <TextArea fx:id="Logs" layoutX="75.0" layoutY="240.0" prefHeight="350.0" prefWidth="802.0" editable="false" style="overflow:scroll" wrapText="true" />
+      
+      <!--Label fx:id="lblObsET" layoutX="126.0" layoutY="150.0" minHeight="16" minWidth="69" text="Obs End Time" />
+      <TextField fx:id="ObsET" editable="true" layoutX="250.0" layoutY="146.0" prefHeight="25.0" prefWidth="77.0" promptText="HH:MM:SS" />
+      <Label fx:id="lblObsTR" layoutX="126.0" layoutY="183.0" minHeight="16" minWidth="69" text="Obs Time Range" />
+      <TextField fx:id="ObsTimeRange" layoutX="250.0" layoutY="179.0" prefHeight="9.0" prefWidth="77.0" text="1 hr" />
+      <Label fx:id="StartTradingtime" layoutX="126.0" layoutY="210.0" minHeight="16" minWidth="69" text="Start Trading Time" />
+      <TextField fx:id="StartTime" layoutX="250.0" layoutY="206.0" prefHeight="10.0" prefWidth="77.0" text="9:00" />
+      <Label fx:id="lblEndTime" layoutX="126.0" layoutY="240.0" minHeight="16" minWidth="69" text="End Trading Time" />
+      <TextField fx:id="EndTime" layoutX="250.0" layoutY="236.0" prefHeight="10.0" prefWidth="77.0" text="3:30" />
+      <Label fx:id="label211" layoutX="126.0" layoutY="273.0" minHeight="16" minWidth="69" text="Close Trading Time" />
+      <TextField fx:id="CloseTime" layoutX="250.0" layoutY="269.0" prefHeight="10.0" prefWidth="77.0" text="3:25" />
+      <Label fx:id="label2111" layoutX="126.0" layoutY="307.0" minHeight="16" minWidth="69" text="No of Contracts" />
+      <TextField fx:id="noContracts" layoutX="250.0" layoutY="303.0" prefHeight="10.0" prefWidth="77.0" promptText="10" />
+      <Label fx:id="label21111" layoutX="126.0" layoutY="343.0" minHeight="16" minWidth="69" text="Initial Stop" />
+      <Label fx:id="label211111" layoutX="126.0" layoutY="374.0" minHeight="16" minWidth="69" text="Stop to BreakEven" />
+      <Label fx:id="label2111111" layoutX="126.0" layoutY="405.0" minHeight="16" minWidth="69" text="Stop TrailAmount" />
+      <Label fx:id="label21111111" layoutX="126.0" layoutY="431.0" minHeight="16" minWidth="69" text="Target1" />
+      <Label fx:id="label211111111" layoutX="126.0" layoutY="461.0" minHeight="16" minWidth="69" text="Target2" />
+      <Label fx:id="label2111111111" layoutX="126.0" layoutY="487.0" minHeight="16" minWidth="69" text="Max Wins" />
+      <Label fx:id="label21111111111" layoutX="126.0" layoutY="514.0" minHeight="16" minWidth="69" text="Max Losses" />
+      <Label fx:id="label211111111111" layoutX="126.0" layoutY="547.0" minHeight="16" minWidth="69" text="Tick Size" />
+      <Label fx:id="label2111111111111" layoutX="126.0" layoutY="574.0" minHeight="16" minWidth="69" text="Ticks past breakout lvl" />
+      <TextField fx:id="initialStop" layoutX="250.0" layoutY="339.0" prefHeight="10.0" prefWidth="77.0" />
+      <TextField fx:id="stopToBE" layoutX="250.0" layoutY="370.0" prefHeight="10.0" prefWidth="77.0" />
+      <TextField fx:id="stopTA" layoutX="250.0" layoutY="401.0" prefHeight="10.0" prefWidth="77.0" />
+      <TextField fx:id="target1" layoutX="250.0" layoutY="427.0" prefHeight="10.0" prefWidth="77.0" />
+      <TextField fx:id="target2" layoutX="250.0" layoutY="457.0" prefHeight="10.0" prefWidth="77.0" />
+      <TextField fx:id="maxWins" layoutX="250.0" layoutY="483.0" prefHeight="10.0" prefWidth="77.0" promptText="100" />
+      <TextField fx:id="maxLosses" layoutX="250.0" layoutY="510.0" prefHeight="10.0" prefWidth="77.0" promptText="100" />
+      <TextField fx:id="tickSize" layoutX="250.0" layoutY="543.0" prefHeight="10.0" prefWidth="77.0" promptText="10" />
+      <TextField fx:id="tickspastBE" layoutX="250.0" layoutY="570.0" prefHeight="10.0" prefWidth="77.0" promptText="100" /-->
+      <Label layoutX="75.0" layoutY="40.0" prefHeight="43.0" prefWidth="102.0" text="User Interface">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      
+      <Button fx:id="Ok" layoutX="207.0" layoutY="595.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Ok" />
+      <Button fx:id="Disconnect" layoutX="182.0" layoutY="627.0" mnemonicParsing="false" onAction="#handleDisconnect" prefHeight="25.0" prefWidth="84.0" text="Disconnect" />
+      
+    </children>
+</AnchorPane>
